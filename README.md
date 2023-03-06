@@ -1,6 +1,8 @@
 # PistoSeg
 Code Repository for AAAI23 Paper "Weakly-Supervised Semantic Segmentation for Histopathology Images Based on Dataset Synthesis and Feature Consistency Constraint"
 
+If you are from China Mainland, you can refer to the gitee repo https://gitee.com/vison307/PistoSeg.
+
 ## Installation
 Code tested on
 * Ubuntu 18.04
