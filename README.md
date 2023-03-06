@@ -11,11 +11,11 @@ Code tested on
 * Pytorch 1.12.1
 * Pytorch Lightning 1.7.1
 
-Please use the follwing command to install the dependencies:
+Please use the following command to install the dependencies:
 
 `conda env create -f environment.yaml`
 
-## Prepraing the Data and Weights
+## Preparing the Data and Weights
 
 1. Download the [WSSS4LUAD dataset](https://wsss4luad.grand-challenge.org/) and put it in ./data/WSSS4LUAD
 
@@ -26,7 +26,7 @@ Please use the follwing command to install the dependencies:
 3. Download the CAM model's weights `res38d.pth` from [OEEM responsitory](https://github.com/xmed-lab/OEEM) and put it in ./weights/res38d.pth
 
 ## CAM Generation
-Plese refer to the OEEM readme in ./OEEM/README.md
+Please refer to the OEEM readme in ./OEEM/README.md
 
 Or you can use the [pre-generated CAMs](https://pan.baidu.com/s/1lcC1c04gZjiujR2xrdfUng?pwd=yj84) (in AAAI23/{dataset}/data/CAM/train.zip) and unzip and put them in ./data/WSSS4LUAD/CAM/train and ./data/BCSS-WSSS/CAM/train.
 
