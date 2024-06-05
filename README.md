@@ -1,5 +1,5 @@
 # PistoSeg
-Code Repository for AAAI23 Paper "Weakly-Supervised Semantic Segmentation for Histopathology Images Based on Dataset Synthesis and Feature Consistency Constraint"
+Code Repository for AAAI23 Paper ["Weakly-Supervised Semantic Segmentation for Histopathology Images Based on Dataset Synthesis and Feature Consistency Constraint"](https://ojs.aaai.org/index.php/AAAI/article/view/25136)
 
 If you are from China Mainland, you can refer to the gitee repo https://gitee.com/vison307/PistoSeg.
 
@@ -21,9 +21,9 @@ Please use the following command to install the dependencies:
 
 2. Download the [BCSS-WSSS dataset](https://drive.google.com/drive/folders/1iS2Z0DsbACqGp7m6VDJbAcgzeXNEFr77) and put it in ./data/BCSS-WSSS (Thanks to [Han et. al](https://github.com/ChuHan89/WSSS-Tissue))
 
-2. Download the ImageNet-pretrained ResNet weight `ilsvrc-cls_rna-a1_cls1000_ep-0001.params` from [SEAM responsitory](https://github.com/YudeWang/SEAM) and put it in ./weights/ilsvrc-cls_rna-a1_cls1000_ep-0001.params
+2. Download the ImageNet-pretrained ResNet weight `ilsvrc-cls_rna-a1_cls1000_ep-0001.params` from [SEAM repository](https://github.com/YudeWang/SEAM) and put it in ./weights/ilsvrc-cls_rna-a1_cls1000_ep-0001.params
 
-3. Download the CAM model's weights `res38d.pth` from [OEEM responsitory](https://github.com/xmed-lab/OEEM) and put it in ./weights/res38d.pth
+3. Download the CAM model's weights `res38d.pth` from [OEEM repository](https://github.com/xmed-lab/OEEM) and put it in ./weights/res38d.pth
 
 ## CAM Generation
 Please refer to the OEEM readme in ./OEEM/README.md
@@ -66,6 +66,18 @@ Due to a disaster to the server, the original weights of the results provided in
 
 ### Reproducibility
 We tried our best to ensure the reproducibility of the results, but since the `torch.nn.functional.interpolate` function is **not deterministic**, the results may be different over runs. If you want to fully reproduce the results, you can use the [following weights](https://pan.baidu.com/s/1lcC1c04gZjiujR2xrdfUng?pwd=yj84) (**code: yj84**) (preliminary segmentation `epoch=*.ckpt`, refining `ResNet38-RFM.pth`, and precise segmentation `segmentation_log/epoch=*.ckpt`) and intermediate results (Generated CAM `data/CAM/train.zip` and Refined Masks `refine/CAM.zip`). Training logs are also provided for reference.
+
+## Citation
+If you find our code helpful, please cite as follows:
+> @inproceedings{fang2023weakly,
+> title={Weakly-supervised semantic segmentation for histopathology images based on dataset synthesis and feature consistency constraint},
+> author={Fang, Zijie and Chen, Yang and Wang, Yifeng and Wang, Zhi and Ji, Xiangyang and Zhang, Yongbing},
+> booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+> volume={37},
+> number={1},
+> pages={606--613},
+> year={2023}
+> }
 
  
 
